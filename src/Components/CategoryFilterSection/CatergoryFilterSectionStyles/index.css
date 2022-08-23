@@ -1,0 +1,7 @@
+ .scrollhost::-webkit-scrollbar {
+  display: none;
+}
+.scrollhost::-moz-scrollbar {
+  display: none;
+ 
+}
