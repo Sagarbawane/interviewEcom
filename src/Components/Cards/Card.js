@@ -63,7 +63,13 @@ function CardSection(props) {
         {/* maping through card array to display cards */}
         {props.List?.map(ele => {
           return (
-            <Grid item xs={4} alignItem="stretch" className={classes.cardRoot}>
+            <Grid
+              key={ele.id}
+              item
+              xs={4}
+              alignItem="stretch"
+              className={classes.cardRoot}
+            >
               <Card elevation={0} className={classes.cardUi}>
                 <CardMedia
                   component="img"

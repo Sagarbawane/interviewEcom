@@ -33,7 +33,7 @@ function CategorySlider() {
       <Box className={classes.selectSection}>
         {DataCategorySlider.map(ele => {
           return (
-            <>
+            <React.Fragment key={ele.Category}>
               <select required className={classes.FormControl}>
                 {/* default value */}
                 <option value="" disabled selected hidden>
@@ -44,7 +44,7 @@ function CategorySlider() {
                   return <option value={ele}>{ele}</option>;
                 })}
               </select>
-            </>
+            </React.Fragment>
           );
         })}
       </Box>

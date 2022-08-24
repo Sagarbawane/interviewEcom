@@ -53,7 +53,7 @@ function ProductDetails() {
         <>
           {productList?.map((product, index) => {
             return (
-              <section className={classes.root}>
+              <section key={product.id} className={classes.root}>
                 <div>
                   <CardMedia
                     component="img"

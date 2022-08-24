@@ -86,9 +86,9 @@ function NavBar(props) {
             </option>
             {DataCategorySlider.map(ele => {
               return (
-                <>
+                <React.Fragment key={ele.Category}>
                   <option value={ele.Category}>{ele.Category}</option>
-                </>
+                </React.Fragment>
               );
             })}
           </select>
